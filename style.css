@@ -162,3 +162,70 @@ h1 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+
+
+
+
+/* Style .recent-searches-section */
+.recent-searches-section {
+  margin: 20px 0;
+  display: none; /* Initially hidden if no searches */
+}
+
+/* Style recent searches heading */
+.recent-searches-section h3 {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Style #recent-searches-container */
+#recent-searches-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+/* Style .recent-search-btn */
+.recent-search-btn {
+  padding: 8px 16px;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 20px; /* pill shape */
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+/* Hover effect for recent search buttons */
+.recent-search-btn:hover {
+  background: #667eea; /* theme color */
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Active/click effect */
+.recent-search-btn:active {
+  transform: scale(0.95);
+}
+
+.clear-history-btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    background: transparent;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.clear-history-btn:hover {
+    color: red;
+    border-color: red;
+    background: #ffe5e5;
+}
